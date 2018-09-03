@@ -1,12 +1,26 @@
 import os
+import sys
+import time
 
 blank = "___"
 
 def greeting():
     print(str("Hello there! Welcome to fill-in-the-blank Madlibs, a dying art form!"))
-    print(str("Are you ready to play?"))
 
-    # os.system('clear')
+def ready_to_play():
+    ready = str(input("Are you ready to play? (y/n): "))
+    if ready == 'y' or ready == 'Y':
+        print("Great, let's go!")
+        time.sleep(1)
+        os.system('clear')
+        display_story()
+    elif ready == 'n' or ready == 'N':
+        print("Okay, goodbye.")
+        time.sleep(1)
+        sys.exit()
+    else:
+        print("Invalid input! Please try again.")
+        ready_to_play()
 
 def display_story():
     print(str("Here's a quick glance of the story you'll be helping to create..."))
@@ -42,10 +56,14 @@ def display_story_with_input_type():
     # os.system('clear')
 
 def test():
+    #check blank variable terminal output
     print(blank)
+    #check underline class
     print(style.UNDERLINE + "underline text" + style.END)
+    #check script exit
+    sys.exit()
 
-test()
+# test()
 greeting()
-display_story()
-display_story_with_input_type()
+ready_to_play()
+# display_story_with_input_type()
