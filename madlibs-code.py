@@ -59,16 +59,52 @@ def display_story_with_input_type():
 def start_game():
     print("So let's get to filling in the blanks, shall we?")
 
+def fill_in_blanks():
+    user_inputs = []
+
+    blank1 = str(input("Enter the name of a place you've always wanted to go: "))
+    user_inputs.append(blank1)
+
+    blank2 = str(input("Enter a verb; what do you want to do today?: "))
+    user_inputs.append(blank2)
+
+    blank3 = str(input("Enter a noun, any noun!: "))
+    user_inputs.append(blank3)
+
+    blank4 = str(input("Enter another noun; what's in your bag/pocket right now?: "))
+    user_inputs.append(blank4)
+
+    blank5 = str(input("Enter a body part--keep it rated-G please (-_-): "))
+    user_inputs.append(blank5)
+
+    blank6 = str(input("Enter an emotion or feeling: "))
+    user_inputs.append(blank6)
+
+    blank7 = str(input("Enter a verb; what do you like to do?: "))
+    user_inputs.append(blank7)
+
+    blank8 = str(input("Enter any noun you can think of; the world is your oyster!!!: "))
+    user_inputs.append(blank8)
+
+    blank9 = str(input("Enter an adjective: "))
+    user_inputs.append(blank9)
+
+    blank10 = str(input("One last noun please!: "))
+    user_inputs.append(blank10)
+
+    print(user_inputs)
+
 def test():
     #check blank variable terminal output
     print(blank)
     #check underline class
     print(style.UNDERLINE + "underline text" + style.END)
-    #check script exit
-    sys.exit()
+    # #check script exit
+    # sys.exit()
+    fill_in_blanks()
 
-# test()
-greeting()
-ready_to_play()
-display_story_with_input_type()
-start_game()
+test()
+# greeting()
+# ready_to_play()
+# display_story_with_input_type()
+# start_game()
