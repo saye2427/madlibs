@@ -3,6 +3,7 @@ import sys
 import time
 
 blank = "___"
+user_inputs = []
 
 def greeting():
     print(str("Hello there! Welcome to fill-in-the-blank Madlibs, a dying art form!"))
@@ -36,7 +37,6 @@ def display_story():
     time.sleep(5)
     os.system('clear')
 
-
 class style:
     UNDERLINE = '\033[4m'
     END = '\033[0m'
@@ -59,8 +59,7 @@ def display_story_with_input_type():
 def start_game():
     print("So let's get to filling in the blanks, shall we?")
 
-def fill_in_blanks():
-    user_inputs = []
+def blank_user_inputs():
 
     blank1 = str(input("Enter the name of a place you've always wanted to go: "))
     user_inputs.append(blank1)
@@ -92,7 +91,18 @@ def fill_in_blanks():
     blank10 = str(input("One last noun please!: "))
     user_inputs.append(blank10)
 
-    print(user_inputs)
+def fill_in_blanks():
+    blank_user_inputs()
+    # print(user_inputs)
+
+    madlibs_story = str(display_story())
+
+    # i = 0
+    # while i < 10:
+    #     i += 1
+    # completed_madlibs_story = madlibs_story.replace('blank', user_inputs[0])
+    # print(completed_madlibs_story)
+
 
 def test():
     #check blank variable terminal output
@@ -101,11 +111,17 @@ def test():
     print(style.UNDERLINE + "underline text" + style.END)
     # #check script exit
     # sys.exit()
-    fill_in_blanks()
+    #check functions
+    # blank_user_inputs()
+    # fill_in_blanks()
+    #test through index out of range error
+    blank_user_inputs()
+    print(user_inputs[0])
+    print(user_inputs[9])
 
 # test()
-greeting()
-ready_to_play()
-display_story_with_input_type()
-start_game()
+# greeting()
+# ready_to_play()
+# display_story_with_input_type()
+# start_game()
 fill_in_blanks()
