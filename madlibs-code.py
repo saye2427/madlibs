@@ -33,8 +33,8 @@ def display_story():
     print(str("So instead, I settled on" + blank + " " + blank + ", something I could"))
     print(str("do closer to home. Maybe I'm not an exemplary in that regard, but I"))
     print(str("sure am" + blank + ". Plus, that was some good " + blank + "!!!"))
-
-    # os.system('clear')
+    time.sleep(5)
+    os.system('clear')
 
 
 class style:
@@ -42,7 +42,8 @@ class style:
     END = '\033[0m'
 
 def display_story_with_input_type():
-    print(str("Here are some parameters that you may wanna follow so your silly story doesn't end up too silly to understand O.o"))
+    print(str("And now, here's the same story with some parameters that you may wanna follow"))
+    print(str("so your silly story doesn't end up too silly to understand!!!:"))
     print(str(""))
     print(str("On my first day in " + style.UNDERLINE + " place " + style.END + ", of course the first thing I"))
     print(str("wanted to " + style.UNDERLINE + " verb " + style.END + " was " + style.UNDERLINE + " noun/thing " + style.END + ". But how? I know I packed"))
@@ -52,8 +53,11 @@ def display_story_with_input_type():
     print(str("So instead, I settled on" + style.UNDERLINE + " verb " + style.END + "ing " + style.UNDERLINE + " noun " + style.END + ", something I could"))
     print(str("do closer to home. Maybe I'm not an exemplary in that regard, but I"))
     print(str("sure am " + style.UNDERLINE + " adjective " + style.END + ". Plus, that was some good " + style.UNDERLINE + " noun " + style.END + "!!!"))
+    time.sleep(10)
+    os.system('clear')
 
-    # os.system('clear')
+def start_game():
+    print("So let's get to filling in the blanks, shall we?")
 
 def test():
     #check blank variable terminal output
@@ -66,4 +70,5 @@ def test():
 # test()
 greeting()
 ready_to_play()
-# display_story_with_input_type()
+display_story_with_input_type()
+start_game()
