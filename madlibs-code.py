@@ -3,7 +3,6 @@ import sys
 import time
 
 blank = "___"
-user_inputs = []
 
 def greeting():
     print(str("Hello there! Welcome to fill-in-the-blank Madlibs, a dying art form!"))
@@ -33,7 +32,7 @@ def display_story():
     print(str(""))
     print(str("So instead, I settled on " + blank + "ing " + blank + ", something I could"))
     print(str("do closer to home. Maybe I'm not an exemplary in that regard, but I"))
-    print(str("sure am" + blank + ". Plus, that was some good " + blank + "!!!"))
+    print(str("sure am " + blank + ". Plus, that was some good " + blank + "!!!"))
     time.sleep(5)
     os.system('clear')
 
@@ -61,6 +60,8 @@ def start_game():
 
 # def blank_user_inputs():
 def fill_in_blanks():
+    user_inputs = []
+
     blank1 = str(input("Enter the name of a place you've always wanted to go: "))
     user_inputs.append(blank1)
 
@@ -96,14 +97,14 @@ def fill_in_blanks():
     time.sleep(3)
     os.system('clear')
 
-    print(str("On my first day in " + blank1 +  ", of course the first thing I"))
-    print(str("wanted to " + blank2 +  " was " + blank3 + ". But how? I know I packed"))
-    print(str("enough " + blank4 + " to make the trek, but I wasn't sure I trusted"))
-    print(str("my " + blank5 + " to allow me to do so without getting " + blank6 + "."))
+    print(str("On my first day in " + user_inputs[0] +  ", of course the first thing I"))
+    print(str("wanted to " + user_inputs[1] +  " was " + user_inputs[2] + ". But how? I know I packed"))
+    print(str("enough " + user_inputs[3] + " to make the trek, but I wasn't sure I trusted"))
+    print(str("my " + user_inputs[4] + " to allow me to do so without getting " + user_inputs[5] + "."))
     print(str(""))
-    print(str("So instead, I settled on " + blank7 + "ing " + blank8 + ", something I could"))
+    print(str("So instead, I settled on " + user_inputs[6] + "ing " + user_inputs[7] + ", something I could"))
     print(str("do closer to home. Maybe I'm not an exemplary in that regard, but I"))
-    print(str("sure am " + blank9 + ". Plus, that was some good " + blank10 + "!!!"))
+    print(str("sure am " + user_inputs[8] + ". Plus, that was some good " + user_inputs[9] + "!!!"))
 
 # def fill_in_blanks():
 #     blank_user_inputs()
