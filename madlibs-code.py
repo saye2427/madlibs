@@ -28,10 +28,10 @@ def display_story():
     print(str(""))
     print(str("On my first day in " + blank +  ", of course the first thing I"))
     print(str("wanted to " + blank +  " was " + blank + ". But how? I know I packed"))
-    print(str("enough " + blank + " to make the trek, but I wasn't not sure I trusted"))
-    print(str("my " + blank + "to allow me to do so without getting " + blank + "."))
+    print(str("enough " + blank + " to make the trek, but I wasn't sure I trusted"))
+    print(str("my " + blank + " to allow me to do so without getting " + blank + "."))
     print(str(""))
-    print(str("So instead, I settled on" + blank + " " + blank + ", something I could"))
+    print(str("So instead, I settled on " + blank + "ing " + blank + ", something I could"))
     print(str("do closer to home. Maybe I'm not an exemplary in that regard, but I"))
     print(str("sure am" + blank + ". Plus, that was some good " + blank + "!!!"))
     time.sleep(5)
@@ -47,7 +47,7 @@ def display_story_with_input_type():
     print(str(""))
     print(str("On my first day in " + style.UNDERLINE + " place " + style.END + ", of course the first thing I"))
     print(str("wanted to " + style.UNDERLINE + " verb " + style.END + " was " + style.UNDERLINE + " noun/thing " + style.END + ". But how? I know I packed"))
-    print(str("enough " + style.UNDERLINE + " noun " + style.END + " to make the trek, but I wasn't not sure I trusted"))
+    print(str("enough " + style.UNDERLINE + " noun " + style.END + " to make the trek, but I wasn't sure I trusted"))
     print(str("my " + style.UNDERLINE + " body part " + style.END + " to allow me to do so without getting " + style.UNDERLINE + " emotion/feeling " + style.END + "."))
     print(str(""))
     print(str("So instead, I settled on" + style.UNDERLINE + " verb " + style.END + "ing " + style.UNDERLINE + " noun " + style.END + ", something I could"))
@@ -59,8 +59,8 @@ def display_story_with_input_type():
 def start_game():
     print("So let's get to filling in the blanks, shall we?")
 
-def blank_user_inputs():
-
+# def blank_user_inputs():
+def fill_in_blanks():
     blank1 = str(input("Enter the name of a place you've always wanted to go: "))
     user_inputs.append(blank1)
 
@@ -91,18 +91,31 @@ def blank_user_inputs():
     blank10 = str(input("One last noun please!: "))
     user_inputs.append(blank10)
 
-def fill_in_blanks():
-    blank_user_inputs()
-    # print(user_inputs)
+    print("")
+    print(str("And now, *DRUMROLL PLEASE*...here's your silly story!!!"))
+    time.sleep(3)
+    os.system('clear')
 
-    madlibs_story = str(display_story())
+    print(str("On my first day in " + blank1 +  ", of course the first thing I"))
+    print(str("wanted to " + blank2 +  " was " + blank3 + ". But how? I know I packed"))
+    print(str("enough " + blank4 + " to make the trek, but I wasn't sure I trusted"))
+    print(str("my " + blank5 + " to allow me to do so without getting " + blank6 + "."))
+    print(str(""))
+    print(str("So instead, I settled on " + blank7 + "ing " + blank8 + ", something I could"))
+    print(str("do closer to home. Maybe I'm not an exemplary in that regard, but I"))
+    print(str("sure am " + blank9 + ". Plus, that was some good " + blank10 + "!!!"))
 
-    # i = 0
-    # while i < 10:
-    #     i += 1
-    # completed_madlibs_story = madlibs_story.replace('blank', user_inputs[0])
-    # print(completed_madlibs_story)
-
+# def fill_in_blanks():
+#     blank_user_inputs()
+#     # print(user_inputs)
+#     #
+#     # madlibs_story = str(display_story())
+#
+#     # i = 0
+#     # while i < 10:
+#     #     i += 1
+#     # completed_madlibs_story = madlibs_story.replace('blank', user_inputs[0])
+#     # print(completed_madlibs_story)
 
 def test():
     #check blank variable terminal output
@@ -115,13 +128,14 @@ def test():
     # blank_user_inputs()
     # fill_in_blanks()
     #test through index out of range error
-    blank_user_inputs()
-    print(user_inputs[0])
-    print(user_inputs[9])
+    # blank_user_inputs()
+    # print(user_inputs[0])
+    # print(user_inputs[9])
+    fill_in_blanks()
 
 # test()
-# greeting()
-# ready_to_play()
-# display_story_with_input_type()
-# start_game()
+greeting()
+ready_to_play()
+display_story_with_input_type()
+start_game()
 fill_in_blanks()
