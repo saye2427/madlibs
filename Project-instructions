@@ -5,7 +5,7 @@ Let's build something fun and silly! :-) Let's make a MadLibs game that generate
 
 Requirements
 Display story with blanks for input words with correct type (nouns, verbs, ... etc.)✓
-Ask user to input words to fill in the blanks.
+Ask user to input words to fill in the blanks.✓
 Output the story with the blanks filled in.
 A test suite to test user input.✓
 
