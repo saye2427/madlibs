@@ -86,7 +86,6 @@ def fill_in_blanks():
     blank8 = int(input("Enter a number: "))
     user_inputs.append(blank8)
 
-
     blank9 = str(input("Enter one more noun--anything you can think of. The world is your oyster!!!: "))
     user_inputs.append(blank9)
 
