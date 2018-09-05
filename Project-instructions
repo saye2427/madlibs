@@ -12,8 +12,8 @@ A test suite to test user input.✓
 Code requirements
 Variable assignment✓
 Function definitions✓
-Core data types: strings, integers, (floats)
-Collection types: lists, tuples, dictionary
+Core data types: strings,✓ integers,✓ (floats)
+Collection types: lists,✓ tuples, dictionary
 
 Stretch
 Randomize the words of the same type (ie shuffle the 5 nouns)).

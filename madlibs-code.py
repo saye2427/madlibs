@@ -30,7 +30,7 @@ def display_story():
     print(str("enough " + blank + " to make the trek, but I wasn't sure I trusted"))
     print(str("my " + blank + " to allow me to do so without getting " + blank + "."))
     print(str(""))
-    print(str("So instead, I settled on " + blank + "ing " + blank + ", something I could"))
+    print(str("So instead, I settled on " + blank + "ing " + blank + " " + blank + "(s), something I could"))
     print(str("do closer to home. Maybe I'm not an exemplary in that regard, but I"))
     print(str("sure am " + blank + ". Plus, that was some good " + blank + "!!!"))
     time.sleep(5)
@@ -49,7 +49,7 @@ def display_story_with_input_type():
     print(str("enough " + style.UNDERLINE + " noun " + style.END + " to make the trek, but I wasn't sure I trusted"))
     print(str("my " + style.UNDERLINE + " body part " + style.END + " to allow me to do so without getting " + style.UNDERLINE + " emotion/feeling " + style.END + "."))
     print(str(""))
-    print(str("So instead, I settled on" + style.UNDERLINE + " verb " + style.END + "ing " + style.UNDERLINE + " noun " + style.END + ", something I could"))
+    print(str("So instead, I settled on" + style.UNDERLINE + " verb " + style.END + "ing " + style.UNDERLINE + " number " + style.END + " " + style.UNDERLINE + " noun " + style.END + "(s), something I could"))
     print(str("do closer to home. Maybe I'm not an exemplary in that regard, but I"))
     print(str("sure am " + style.UNDERLINE + " adjective " + style.END + ". Plus, that was some good " + style.UNDERLINE + " noun " + style.END + "!!!"))
     time.sleep(10)
@@ -83,13 +83,14 @@ def fill_in_blanks():
     blank7 = str(input("Enter a verb; what do you like to do?: "))
     user_inputs.append(blank7)
 
-    blank8 = str(input("Enter any noun you can think of; the world is your oyster!!!: "))
+    blank8 = int(input("Enter a number: "))
     user_inputs.append(blank8)
 
-    blank9 = str(input("Enter an adjective: "))
+
+    blank9 = str(input("Enter one more noun--anything you can think of. The world is your oyster!!!: "))
     user_inputs.append(blank9)
 
-    blank10 = str(input("One last noun please!: "))
+    blank10 = str(input("And lastly, enter an adjective: "))
     user_inputs.append(blank10)
 
     print("")
@@ -102,9 +103,9 @@ def fill_in_blanks():
     print(str("enough " + user_inputs[3] + " to make the trek, but I wasn't sure I trusted"))
     print(str("my " + user_inputs[4] + " to allow me to do so without getting " + user_inputs[5] + "."))
     print(str(""))
-    print(str("So instead, I settled on " + user_inputs[6] + "ing " + user_inputs[7] + ", something I could"))
+    print(str("So instead, I settled on " + user_inputs[6] + "ing " + str(user_inputs[7]) + " " + user_inputs[8] + "(s), something I could"))
     print(str("do closer to home. Maybe I'm not an exemplary in that regard, but I"))
-    print(str("sure am " + user_inputs[8] + ". Plus, that was some good " + user_inputs[9] + "!!!"))
+    print(str("sure am " + user_inputs[9] + ". Plus, that was some good " + user_inputs[8] + "!!!"))
 
 # def fill_in_blanks():
 #     blank_user_inputs()
@@ -113,7 +114,7 @@ def fill_in_blanks():
 #     # madlibs_story = str(display_story())
 #
 #     # i = 0
-#     # while i < 10:
+#     # while i < 11:
 #     #     i += 1
 #     # completed_madlibs_story = madlibs_story.replace('blank', user_inputs[0])
 #     # print(completed_madlibs_story)
