@@ -126,10 +126,10 @@ def test():
     print(style.UNDERLINE + "underline text" + style.END)
     # #check script exit
     # sys.exit()
-    #check functions
+    # #check functions
     # blank_user_inputs()
     # fill_in_blanks()
-    #test through index out of range error
+    # #test through 'index out of range' error
     # blank_user_inputs()
     # print(user_inputs[0])
     # print(user_inputs[9])
