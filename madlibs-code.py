@@ -52,7 +52,7 @@ def display_story_with_input_type():
     print(str("So instead, I settled on" + style.UNDERLINE + " verb " + style.END + "ing " + style.UNDERLINE + " number " + style.END + " " + style.UNDERLINE + " noun " + style.END + "(s), something I could"))
     print(str("do closer to home. Maybe I'm not an exemplary in that regard, but I"))
     print(str("sure am " + style.UNDERLINE + " adjective " + style.END + ". Plus, that was some good " + style.UNDERLINE + " noun " + style.END + "!!!"))
-    time.sleep(10)
+    time.sleep(7)
     os.system('clear')
 
 def start_game():
